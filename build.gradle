@@ -1,44 +1,50 @@
 plugins {
-	id 'java'
-	id 'org.springframework.boot' version '3.3.3'
-	id 'io.spring.dependency-management' version '1.1.6'
+    id 'org.springframework.boot' version '3.3.3'
+    id 'io.spring.dependency-management' version '1.1.3'
+    id 'java'
 }
 
 group = 'com.takehome'
 version = '0.0.1-SNAPSHOT'
-
-configurations {
-	compileOnly {
-		extendsFrom annotationProcessor
-	}
-}
+sourceCompatibility = '17'
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-    // Updated jjwt dependencies
-    implementation 'io.jsonwebtoken:jjwt-api:0.11.5' // API for JJWT
-    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5' // Implementation of JJWT
-    runtimeOnly 'io.jsonwebtoken:jjwt-orgjson:0.11.5' // JSON processing for JJWT
-
-    // Other dependencies
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-security'
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    // Spring Boot Web
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.session:spring-session-core'
+
+    // Spring Boot Security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    // Spring Boot JPA + MySQL
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // Bean Validation (Jakarta) - managed by Spring Boot, no version needed
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // Lombok
     compileOnly 'org.projectlombok:lombok'
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    runtimeOnly 'com.mysql:mysql-connector-j'
     annotationProcessor 'org.projectlombok:lombok'
+
+    // MySQL Connector - version managed by Spring Boot
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    // JWT
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+    // DevTools
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    // Testing
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
-
 tasks.named('test') {
-	useJUnitPlatform()
+    useJUnitPlatform()
 }
