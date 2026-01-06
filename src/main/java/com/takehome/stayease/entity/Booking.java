@@ -10,6 +10,7 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Booking {
 
     @Id
@@ -17,12 +18,16 @@ public class Booking {
     private Long id;
 
     @ManyToOne
+    @JoinColumn(name = "hotel_id", nullable = false)
     private Hotel hotel;
 
     @ManyToOne
-    private User user;
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user; // Customer who booked
 
+    @Column(nullable = false)
     private LocalDate checkInDate;
+
+    @Column(nullable = false)
     private LocalDate checkOutDate;
 }
-

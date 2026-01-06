@@ -1,6 +1,6 @@
-Starting a Gradle Daemon, 7 stopped Daemons could not be reused, use --status for details
+Starting a Gradle Daemon, 5 stopped Daemons could not be reused, use --status for details
 > Task :compileJava
-> Task :processResources UP-TO-DATE
+> Task :processResources
 > Task :classes
 > Task :resolveMainClassName
 
@@ -15,39 +15,188 @@ Starting a Gradle Daemon, 7 stopped Daemons could not be reused, use --status fo
 
  :: Spring Boot ::                (v3.3.3)
 
-2026-01-01T14:53:18.732+05:30  INFO 9462 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : Starting StayeaseApplication using Java 17.0.7 with PID 9462 (/tmp/gradle_builds/stayease/stayease/classes/java/main started by crio-user in /home/crio-user/workspace/narayanpunasiya16-ME_BUILDOUT_STAYEASE)
-2026-01-01T14:53:18.750+05:30  INFO 9462 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-01-01T14:53:18.937+05:30  INFO 9462 --- [stayease] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-01-01T14:53:18.938+05:30  INFO 9462 --- [stayease] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-01-01T14:53:20.356+05:30  INFO 9462 --- [stayease] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-01T14:53:20.487+05:30  INFO 9462 --- [stayease] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
-2026-01-01T14:53:21.738+05:30  INFO 9462 --- [stayease] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-01-01T14:53:21.767+05:30  INFO 9462 --- [stayease] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-01-01T14:53:21.768+05:30  INFO 9462 --- [stayease] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2026-01-01T14:53:21.844+05:30  INFO 9462 --- [stayease] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-01-01T14:53:21.847+05:30  INFO 9462 --- [stayease] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2906 ms
-2026-01-01T14:53:22.078+05:30  INFO 9462 --- [stayease] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-01T14:53:22.156+05:30  INFO 9462 --- [stayease] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2026-01-01T14:53:22.206+05:30  INFO 9462 --- [stayease] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-01-01T14:53:22.702+05:30  INFO 9462 --- [stayease] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-01T14:53:22.762+05:30  INFO 9462 --- [stayease] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-01-01T14:53:23.310+05:30  INFO 9462 --- [stayease] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3280eade
-2026-01-01T14:53:23.314+05:30  INFO 9462 --- [stayease] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-01-01T14:53:23.410+05:30  WARN 9462 --- [stayease] [  restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.42 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-01-01T14:53:25.146+05:30  INFO 9462 --- [stayease] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-01T14:53:25.442+05:30  INFO 9462 --- [stayease] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01T14:53:26.312+05:30  WARN 9462 --- [stayease] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-01T14:53:26.391+05:30  INFO 9462 --- [stayease] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
-2026-01-01T14:53:27.486+05:30  INFO 9462 --- [stayease] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-01-01T14:53:27.534+05:30  INFO 9462 --- [stayease] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2026-01-01T14:53:27.552+05:30  INFO 9462 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : Started StayeaseApplication in 9.531 seconds (process running for 10.553)
-2026-01-01T14:53:28.549+05:30  INFO 9462 --- [stayease] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-01T14:53:28.549+05:30  INFO 9462 --- [stayease] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-01-01T14:53:28.552+05:30  INFO 9462 --- [stayease] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-01-01T14:53:29.298+05:30  WARN 9462 --- [stayease] [nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [io.jsonwebtoken.security.WeakKeyException: The signing key's size is 240 bits which is not secure enough for the HS256 algorithm.  The JWT JWA Specification (RFC 7518, Section 3.2) states that keys used with HS256 MUST have a size >= 256 bits (the key size must be greater than or equal to the hash output size).  Consider using the io.jsonwebtoken.security.Keys class's 'secretKeyFor(SignatureAlgorithm.HS256)' method to create a key guaranteed to be secure enough for HS256.  See https://tools.ietf.org/html/rfc7518#section-3.2 for more information.]
-2026-01-01T14:53:29.500+05:30  WARN 9462 --- [stayease] [nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [io.jsonwebtoken.security.WeakKeyException: The signing key's size is 240 bits which is not secure enough for the HS256 algorithm.  The JWT JWA Specification (RFC 7518, Section 3.2) states that keys used with HS256 MUST have a size >= 256 bits (the key size must be greater than or equal to the hash output size).  Consider using the io.jsonwebtoken.security.Keys class's 'secretKeyFor(SignatureAlgorithm.HS256)' method to create a key guaranteed to be secure enough for HS256.  See https://tools.ietf.org/html/rfc7518#section-3.2 for more information.]
-2026-01-01T14:53:29.743+05:30  WARN 9462 --- [stayease] [nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [io.jsonwebtoken.security.WeakKeyException: The signing key's size is 240 bits which is not secure enough for the HS256 algorithm.  The JWT JWA Specification (RFC 7518, Section 3.2) states that keys used with HS256 MUST have a size >= 256 bits (the key size must be greater than or equal to the hash output size).  Consider using the io.jsonwebtoken.security.Keys class's 'secretKeyFor(SignatureAlgorithm.HS256)' method to create a key guaranteed to be secure enough for HS256.  See https://tools.ietf.org/html/rfc7518#section-3.2 for more information.]
-2026-01-01T14:53:29.796+05:30  WARN 9462 --- [stayease] [nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.takehome.stayease.controller.UserController.register(com.takehome.stayease.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'password': rejected value [weak]; codes [Pattern.registerRequest.password,Pattern.password,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password],[Ljakarta.validation.constraints.Pattern$Flag;@5277044a,^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$]; default message [Password must have at least 8 characters, one uppercase, one number and one special character]] ]
-2026-01-01T14:53:29.804+05:30  WARN 9462 --- [stayease] [nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.takehome.stayease.controller.UserController.register(com.takehome.stayease.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'email': rejected value [invalid-email]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@2c408390,.*]; default message [Invalid email format]] ]
-2026-01-01T14:53:30.052+05:30  WARN 9462 --- [stayease] [nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [io.jsonwebtoken.security.WeakKeyException: The signing key's size is 240 bits which is not secure enough for the HS256 algorithm.  The JWT JWA Specification (RFC 7518, Section 3.2) states that keys used with HS256 MUST have a size >= 256 bits (the key size must be greater than or equal to the hash output size).  Consider using the io.jsonwebtoken.security.Keys class's 'secretKeyFor(SignatureAlgorithm.HS256)' method to create a key guaranteed to be secure enough for HS256.  See https://tools.ietf.org/html/rfc7518#section-3.2 for more information.]
-2026-01-01T14:53:30.199+05:30  WARN 9462 --- [stayease] [nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.takehome.stayease.exception.NotFoundException: Invalid credentials]
+2026-01-06T18:57:42.515+05:30  INFO 4454 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : Starting StayeaseApplication using Java 17.0.7 with PID 4454 (/tmp/gradle_builds/stayease/stayease/classes/java/main started by crio-user in /home/crio-user/workspace/narayanpunasiya16-ME_BUILDOUT_STAYEASE)
+2026-01-06T18:57:42.522+05:30  INFO 4454 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-01-06T18:57:42.637+05:30  INFO 4454 --- [stayease] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-06T18:57:42.640+05:30  INFO 4454 --- [stayease] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-06T18:57:43.830+05:30  INFO 4454 --- [stayease] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-06T18:57:43.931+05:30  INFO 4454 --- [stayease] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 3 JPA repository interfaces.
+2026-01-06T18:57:44.672+05:30  INFO 4454 --- [stayease] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-01-06T18:57:44.695+05:30  INFO 4454 --- [stayease] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-06T18:57:44.696+05:30  INFO 4454 --- [stayease] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-01-06T18:57:44.752+05:30  INFO 4454 --- [stayease] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-06T18:57:44.754+05:30  INFO 4454 --- [stayease] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2110 ms
+2026-01-06T18:57:44.916+05:30  INFO 4454 --- [stayease] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-06T18:57:44.970+05:30  INFO 4454 --- [stayease] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-01-06T18:57:45.005+05:30  INFO 4454 --- [stayease] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-06T18:57:45.340+05:30  INFO 4454 --- [stayease] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-06T18:57:45.369+05:30  INFO 4454 --- [stayease] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-06T18:57:45.757+05:30  INFO 4454 --- [stayease] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1734a56b
+2026-01-06T18:57:45.760+05:30  INFO 4454 --- [stayease] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-06T18:57:45.820+05:30  WARN 4454 --- [stayease] [  restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.42 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-01-06T18:57:47.012+05:30  INFO 4454 --- [stayease] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-06T18:57:47.100+05:30  INFO 4454 --- [stayease] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-06T18:57:47.598+05:30  WARN 4454 --- [stayease] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-06T18:57:47.621+05:30  WARN 4454 --- [stayease] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Found 2 UserDetailsService beans, with names [customUserDetailsService, userService]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
+2026-01-06T18:57:47.622+05:30 DEBUG 4454 --- [stayease] [  restartedMain] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-01-06T18:57:47.923+05:30 DEBUG 4454 --- [stayease] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-01-06T18:57:48.263+05:30  INFO 4454 --- [stayease] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-01-06T18:57:48.311+05:30  INFO 4454 --- [stayease] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-01-06T18:57:48.393+05:30  INFO 4454 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : Started StayeaseApplication in 6.525 seconds (process running for 7.421)
+2026-01-06T18:57:48.788+05:30  INFO 4454 --- [stayease] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-06T18:57:48.788+05:30  INFO 4454 --- [stayease] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-06T18:57:48.789+05:30  INFO 4454 --- [stayease] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-06T18:57:48.809+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
+2026-01-06T18:57:48.817+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-06T18:57:48.820+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
+2026-01-06T18:57:49.396+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
+2026-01-06T18:57:49.396+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-06T18:57:49.396+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
+2026-01-06T18:57:49.545+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
+2026-01-06T18:57:49.545+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-06T18:57:49.546+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
+2026-01-06T18:57:49.690+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
+2026-01-06T18:57:49.690+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-06T18:57:49.691+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
+2026-01-06T18:57:49.708+05:30  WARN 4454 --- [stayease] [nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.takehome.stayease.dto.AuthResponse> com.takehome.stayease.controller.AuthController.register(com.takehome.stayease.dto.RegisterRequest) with 2 errors: [Field error in object 'registerRequest' on field 'password': rejected value [weak]; codes [Pattern.registerRequest.password,Pattern.password,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password],[Ljakarta.validation.constraints.Pattern$Flag;@20d81dd8,^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*]).*$]; default message [Password must contain uppercase, number, and special char]] [Field error in object 'registerRequest' on field 'password': rejected value [weak]; codes [Size.registerRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2026-01-06T18:57:49.716+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
+2026-01-06T18:57:49.716+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-06T18:57:49.717+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
+2026-01-06T18:57:49.721+05:30  WARN 4454 --- [stayease] [nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.takehome.stayease.dto.AuthResponse> com.takehome.stayease.controller.AuthController.register(com.takehome.stayease.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'email': rejected value [invalid-email]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@110b7a03,.*]; default message [Invalid email format]] ]
+2026-01-06T18:57:49.734+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/users/login
+2026-01-06T18:57:49.735+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-06T18:57:49.735+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/users/login
+2026-01-06T18:57:49.894+05:30 DEBUG 4454 --- [stayease] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/users/login
+2026-01-06T18:57:49.895+05:30 DEBUG 4454 --- [stayease] [io-8081-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-06T18:57:49.895+05:30 DEBUG 4454 --- [stayease] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/users/login
+2026-01-06T18:57:50.027+05:30  WARN 4454 --- [stayease] [io-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.takehome.stayease.exception.InvalidCredentialsException: Invalid credentials]
+2026-01-06T18:57:50.034+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/hotels
+2026-01-06T18:57:50.034+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-06T18:57:50.035+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/hotels
+2026-01-06T18:57:50.063+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/hotels
+2026-01-06T18:57:50.142+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/hotels
+2026-01-06T18:57:50.147+05:30 ERROR 4454 --- [stayease] [nio-8081-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.takehome.stayease.dto.HotelRequest.getTotalRooms()" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.takehome.stayease.dto.HotelRequest.getTotalRooms()" is null
+	at com.takehome.stayease.service.HotelService.createHotel(HotelService.java:25) ~[main/:na]
+	at com.takehome.stayease.controller.HotelController.createHotel(HotelController.java:30) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at com.takehome.stayease.config.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:64) ~[main/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2026-01-06T18:57:50.161+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /error
+2026-01-06T18:57:50.162+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-06T18:57:50.170+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/hotels
+2026-01-06T18:57:50.184+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /error
+2026-01-06T18:57:50.185+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-01-06T18:57:50.192+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/hotels
+2026-01-06T18:57:50.205+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/hotels
+2026-01-06T18:57:50.225+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/bookings/6
+2026-01-06T18:57:50.237+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/bookings/6
+2026-01-06T18:57:50.312+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/bookings/6
+2026-01-06T18:57:50.326+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/bookings/6
+2026-01-06T18:57:50.336+05:30  WARN 4454 --- [stayease] [nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.takehome.stayease.exception.NoRoomsAvailableException: No rooms available]
+2026-01-06T18:57:50.340+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/bookings/1
+2026-01-06T18:57:50.351+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/bookings/1
+2026-01-06T18:57:50.370+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Securing DELETE /api/bookings/1
+2026-01-06T18:57:50.382+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Secured DELETE /api/bookings/1
+2026-01-06T18:57:50.415+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing DELETE /api/bookings/1
+2026-01-06T18:57:50.429+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing DELETE /error
+2026-01-06T18:57:50.429+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext

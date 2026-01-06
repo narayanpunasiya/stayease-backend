@@ -1,18 +1,17 @@
 package com.takehome.stayease.dto;
 
-import jakarta.validation.constraints.Future;
+import lombok.Getter;
+import lombok.Setter;
 import jakarta.validation.constraints.NotNull;
-import lombok.Data;
-
 import java.time.LocalDate;
 
-@Data
+@Getter
+@Setter
 public class BookingRequest {
 
-    @NotNull
-    @Future(message = "Check-in date must be in the future")
+    @NotNull(message = "Check-in date is required")
     private LocalDate checkInDate;
 
-    @NotNull
+    @NotNull(message = "Check-out date is required")
     private LocalDate checkOutDate;
 }

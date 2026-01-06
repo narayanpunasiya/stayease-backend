@@ -21,6 +21,8 @@ dependencies {
 
     // Spring Boot JPA + MySQL
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
+
 
     // Bean Validation (Jakarta) - managed by Spring Boot, no version needed
     implementation 'org.springframework.boot:spring-boot-starter-validation'

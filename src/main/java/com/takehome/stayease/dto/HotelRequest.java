@@ -1,24 +1,14 @@
 package com.takehome.stayease.dto;
 
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class HotelRequest {
-
-    @NotBlank
     private String name;
-
-    @NotBlank
     private String location;
-
     private String description;
-
-    @Min(1)
-    private int totalRooms;
-
-    @Min(0)
-    private int availableRooms;
+    private Integer totalRooms;
+    private Integer availableRooms;
 }
-
