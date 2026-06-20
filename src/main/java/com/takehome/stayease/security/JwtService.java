@@ -1,13 +1,13 @@
 package com.takehome.stayease.security;
 
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
+import org.springframework.security.core.userdetails.UserDetails;
 
+import javax.crypto.SecretKey;
 import java.util.Date;
 
 @Service
@@ -19,33 +19,36 @@ public class JwtService {
     @Value("${jwt.expiration}")
     private long expiration;
 
-    public String generateToken(UserDetails userDetails) {
+    private SecretKey key;
+
+    @PostConstruct
+    public void init() {
+        key = Keys.hmacShaKeyFor(secret.getBytes());
+    }
+
+    public String generateToken(String email) {
+
         return Jwts.builder()
-                .setSubject(userDetails.getUsername())
-                .claim("roles", userDetails.getAuthorities()
-                        .stream()
-                        .map(a -> a.getAuthority())
-                        .toList())
+                .setSubject(email)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + expiration))
-                .signWith(Keys.hmacShaKeyFor(secret.getBytes()), SignatureAlgorithm.HS256)
+                .signWith(key)
                 .compact();
     }
 
     public String extractUsername(String token) {
-        return extractClaims(token).getSubject();
-    }
 
-    public Claims extractClaims(String token) {
         return Jwts.parserBuilder()
-                .setSigningKey(secret.getBytes())
+                .setSigningKey(key)
                 .build()
                 .parseClaimsJws(token)
-                .getBody();
+                .getBody()
+                .getSubject();
     }
 
     public boolean isTokenValid(String token, UserDetails userDetails) {
-        return extractUsername(token).equals(userDetails.getUsername())
-                && extractClaims(token).getExpiration().after(new Date());
+
+        return extractUsername(token)
+                .equals(userDetails.getUsername());
     }
 }

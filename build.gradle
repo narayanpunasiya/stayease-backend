@@ -6,40 +6,39 @@ plugins {
 
 group = 'com.takehome'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    // Spring Boot Web
+    // Web
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
-    // Spring Boot Security
+    // Security
     implementation 'org.springframework.boot:spring-boot-starter-security'
 
-    // Spring Boot JPA + MySQL
+    // JPA + MySQL
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
-
-
-    // Bean Validation (Jakarta) - managed by Spring Boot, no version needed
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
-
-    // Lombok
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-
-    // MySQL Connector - version managed by Spring Boot
     runtimeOnly 'com.mysql:mysql-connector-j'
+
+    // Validation
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
 
     // JWT
     implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
     runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
     runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
 
-    // DevTools
+    // Lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // Development
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
     // Testing

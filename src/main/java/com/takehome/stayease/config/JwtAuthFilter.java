@@ -1,66 +1,68 @@
-package com.takehome.stayease.config;
+// package com.takehome.stayease.config;
 
-import jakarta.servlet.FilterChain;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import lombok.RequiredArgsConstructor;
-import java.io.IOException;
-import java.util.List;
-import com.takehome.stayease.security.CustomUserDetailsService;
-import com.takehome.stayease.security.JwtService;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Component;
-import org.springframework.web.filter.OncePerRequestFilter;
+// import jakarta.servlet.FilterChain;
+// import jakarta.servlet.ServletException;
+// import jakarta.servlet.http.HttpServletRequest;
+// import jakarta.servlet.http.HttpServletResponse;
+// import lombok.RequiredArgsConstructor;
+// import java.io.IOException;
 
-@Component
-@RequiredArgsConstructor
-public class JwtAuthFilter extends OncePerRequestFilter {
+// import com.takehome.stayease.security.JwtService;
+// import com.takehome.stayease.security.CustomUserDetailsService;
 
-    private final JwtService jwtService;
-    private final CustomUserDetailsService userDetailsService;
+// import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+// import org.springframework.security.core.context.SecurityContextHolder;
+// import org.springframework.security.core.userdetails.UserDetails;
+// import org.springframework.stereotype.Component;
+// import org.springframework.web.filter.OncePerRequestFilter;
 
-    @Override
-    protected void doFilterInternal(HttpServletRequest request,
-                                    HttpServletResponse response,
-                                    FilterChain filterChain)
-            throws ServletException, IOException {
+// @Component
+// @RequiredArgsConstructor
+// public class JwtAuthFilter extends OncePerRequestFilter {
 
-        final String authHeader = request.getHeader("Authorization");
+//     private final JwtService jwtService;
+//     private final CustomUserDetailsService userDetailsService;
 
-        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-            filterChain.doFilter(request, response);
-            return;
-        }
+//     @Override
+//     protected void doFilterInternal(HttpServletRequest request,
+//                                     HttpServletResponse response,
+//                                     FilterChain filterChain)
+//             throws ServletException, IOException {
 
-        String jwt = authHeader.substring(7);
-        String username = jwtService.extractUsername(jwt);
+//         final String authHeader = request.getHeader("Authorization");
 
-        if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
+//         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+//             filterChain.doFilter(request, response);
+//             return;
+//         }
 
-            UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+//         String jwt = authHeader.substring(7);
 
-            if (jwtService.isTokenValid(jwt, userDetails)) {
+//         try {
+//             String username = jwtService.extractUsername(jwt);
 
-                var claims = jwtService.extractClaims(jwt);
-                var roles = (List<?>) claims.get("roles");
+//             if (username != null &&
+//                 SecurityContextHolder.getContext().getAuthentication() == null) {
 
-                var authorities = roles.stream()
-                        .map(Object::toString)
-                        .map(SimpleGrantedAuthority::new)
-                        .toList();
+//                 UserDetails userDetails =
+//                         userDetailsService.loadUserByUsername(username);
 
-                UsernamePasswordAuthenticationToken authToken =
-                        new UsernamePasswordAuthenticationToken(
-                                userDetails, null, authorities);
+//                 if (jwtService.isTokenValid(jwt, userDetails)) {
 
-                SecurityContextHolder.getContext().setAuthentication(authToken);
-            }
-        }
+//                     UsernamePasswordAuthenticationToken authToken =
+//                             new UsernamePasswordAuthenticationToken(
+//                                     userDetails,
+//                                     null,
+//                                     userDetails.getAuthorities()
+//                             );
 
-        filterChain.doFilter(request, response);
-    }
-}
+//                     SecurityContextHolder.getContext().setAuthentication(authToken);
+//                 }
+//             }
+//         } catch (Exception e) {
+//             // Do nothing, just continue filter chain
+//         }
+
+//         filterChain.doFilter(request, response);
+//     }
+// }

@@ -1,6 +1,6 @@
-Starting a Gradle Daemon, 5 stopped Daemons could not be reused, use --status for details
+Starting a Gradle Daemon, 7 stopped Daemons could not be reused, use --status for details
 > Task :compileJava
-> Task :processResources
+> Task :processResources UP-TO-DATE
 > Task :classes
 > Task :resolveMainClassName
 
@@ -15,71 +15,90 @@ Starting a Gradle Daemon, 5 stopped Daemons could not be reused, use --status fo
 
  :: Spring Boot ::                (v3.3.3)
 
-2026-01-06T18:57:42.515+05:30  INFO 4454 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : Starting StayeaseApplication using Java 17.0.7 with PID 4454 (/tmp/gradle_builds/stayease/stayease/classes/java/main started by crio-user in /home/crio-user/workspace/narayanpunasiya16-ME_BUILDOUT_STAYEASE)
-2026-01-06T18:57:42.522+05:30  INFO 4454 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-01-06T18:57:42.637+05:30  INFO 4454 --- [stayease] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-01-06T18:57:42.640+05:30  INFO 4454 --- [stayease] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-01-06T18:57:43.830+05:30  INFO 4454 --- [stayease] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-06T18:57:43.931+05:30  INFO 4454 --- [stayease] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 3 JPA repository interfaces.
-2026-01-06T18:57:44.672+05:30  INFO 4454 --- [stayease] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-01-06T18:57:44.695+05:30  INFO 4454 --- [stayease] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-01-06T18:57:44.696+05:30  INFO 4454 --- [stayease] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2026-01-06T18:57:44.752+05:30  INFO 4454 --- [stayease] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-01-06T18:57:44.754+05:30  INFO 4454 --- [stayease] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2110 ms
-2026-01-06T18:57:44.916+05:30  INFO 4454 --- [stayease] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-06T18:57:44.970+05:30  INFO 4454 --- [stayease] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2026-01-06T18:57:45.005+05:30  INFO 4454 --- [stayease] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-01-06T18:57:45.340+05:30  INFO 4454 --- [stayease] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-06T18:57:45.369+05:30  INFO 4454 --- [stayease] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-01-06T18:57:45.757+05:30  INFO 4454 --- [stayease] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1734a56b
-2026-01-06T18:57:45.760+05:30  INFO 4454 --- [stayease] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-01-06T18:57:45.820+05:30  WARN 4454 --- [stayease] [  restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.42 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-01-06T18:57:47.012+05:30  INFO 4454 --- [stayease] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-06T18:57:47.100+05:30  INFO 4454 --- [stayease] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-06T18:57:47.598+05:30  WARN 4454 --- [stayease] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-01-06T18:57:47.621+05:30  WARN 4454 --- [stayease] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Found 2 UserDetailsService beans, with names [customUserDetailsService, userService]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
-2026-01-06T18:57:47.622+05:30 DEBUG 4454 --- [stayease] [  restartedMain] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
-2026-01-06T18:57:47.923+05:30 DEBUG 4454 --- [stayease] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-01-06T18:57:48.263+05:30  INFO 4454 --- [stayease] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-01-06T18:57:48.311+05:30  INFO 4454 --- [stayease] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2026-01-06T18:57:48.393+05:30  INFO 4454 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : Started StayeaseApplication in 6.525 seconds (process running for 7.421)
-2026-01-06T18:57:48.788+05:30  INFO 4454 --- [stayease] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-06T18:57:48.788+05:30  INFO 4454 --- [stayease] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-01-06T18:57:48.789+05:30  INFO 4454 --- [stayease] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-01-06T18:57:48.809+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
-2026-01-06T18:57:48.817+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-01-06T18:57:48.820+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
-2026-01-06T18:57:49.396+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
-2026-01-06T18:57:49.396+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-01-06T18:57:49.396+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
-2026-01-06T18:57:49.545+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
-2026-01-06T18:57:49.545+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-01-06T18:57:49.546+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
-2026-01-06T18:57:49.690+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
-2026-01-06T18:57:49.690+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-01-06T18:57:49.691+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
-2026-01-06T18:57:49.708+05:30  WARN 4454 --- [stayease] [nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.takehome.stayease.dto.AuthResponse> com.takehome.stayease.controller.AuthController.register(com.takehome.stayease.dto.RegisterRequest) with 2 errors: [Field error in object 'registerRequest' on field 'password': rejected value [weak]; codes [Pattern.registerRequest.password,Pattern.password,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password],[Ljakarta.validation.constraints.Pattern$Flag;@20d81dd8,^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*]).*$]; default message [Password must contain uppercase, number, and special char]] [Field error in object 'registerRequest' on field 'password': rejected value [weak]; codes [Size.registerRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
-2026-01-06T18:57:49.716+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
-2026-01-06T18:57:49.716+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-01-06T18:57:49.717+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
-2026-01-06T18:57:49.721+05:30  WARN 4454 --- [stayease] [nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.takehome.stayease.dto.AuthResponse> com.takehome.stayease.controller.AuthController.register(com.takehome.stayease.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'email': rejected value [invalid-email]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@110b7a03,.*]; default message [Invalid email format]] ]
-2026-01-06T18:57:49.734+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/users/login
-2026-01-06T18:57:49.735+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-01-06T18:57:49.735+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/users/login
-2026-01-06T18:57:49.894+05:30 DEBUG 4454 --- [stayease] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/users/login
-2026-01-06T18:57:49.895+05:30 DEBUG 4454 --- [stayease] [io-8081-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-01-06T18:57:49.895+05:30 DEBUG 4454 --- [stayease] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/users/login
-2026-01-06T18:57:50.027+05:30  WARN 4454 --- [stayease] [io-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.takehome.stayease.exception.InvalidCredentialsException: Invalid credentials]
-2026-01-06T18:57:50.034+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/hotels
-2026-01-06T18:57:50.034+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-01-06T18:57:50.035+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/hotels
-2026-01-06T18:57:50.063+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/hotels
-2026-01-06T18:57:50.142+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/hotels
-2026-01-06T18:57:50.147+05:30 ERROR 4454 --- [stayease] [nio-8081-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.takehome.stayease.dto.HotelRequest.getTotalRooms()" is null] with root cause
+2026-03-02T10:35:12.437+05:30  INFO 19355 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : Starting StayeaseApplication using Java 17.0.7 with PID 19355 (/tmp/gradle_builds/stayease/stayease/classes/java/main started by crio-user in /home/crio-user/workspace/narayanpunasiya16-ME_BUILDOUT_STAYEASE)
+2026-03-02T10:35:12.442+05:30  INFO 19355 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-02T10:35:12.508+05:30  INFO 19355 --- [stayease] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-02T10:35:12.509+05:30  INFO 19355 --- [stayease] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-02T10:35:13.796+05:30  INFO 19355 --- [stayease] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-02T10:35:13.883+05:30  INFO 19355 --- [stayease] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
+2026-03-02T10:35:15.047+05:30  INFO 19355 --- [stayease] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-03-02T10:35:15.074+05:30  INFO 19355 --- [stayease] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-02T10:35:15.074+05:30  INFO 19355 --- [stayease] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-03-02T10:35:15.194+05:30  INFO 19355 --- [stayease] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-02T10:35:15.206+05:30  INFO 19355 --- [stayease] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2684 ms
+2026-03-02T10:35:15.418+05:30  INFO 19355 --- [stayease] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02T10:35:15.474+05:30  INFO 19355 --- [stayease] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-03-02T10:35:15.513+05:30  INFO 19355 --- [stayease] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-02T10:35:15.881+05:30  INFO 19355 --- [stayease] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-02T10:35:15.924+05:30  INFO 19355 --- [stayease] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-02T10:35:16.331+05:30  INFO 19355 --- [stayease] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1aea306
+2026-03-02T10:35:16.334+05:30  INFO 19355 --- [stayease] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-02T10:35:16.397+05:30  WARN 19355 --- [stayease] [  restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.42 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-03-02T10:35:17.637+05:30  INFO 19355 --- [stayease] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02T10:35:17.718+05:30  INFO 19355 --- [stayease] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-02T10:35:18.387+05:30  WARN 19355 --- [stayease] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-02T10:35:18.440+05:30  INFO 19355 --- [stayease] [  restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-03-02T10:35:18.441+05:30  WARN 19355 --- [stayease] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-03-02T10:35:18.907+05:30 DEBUG 19355 --- [stayease] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-03-02T10:35:19.357+05:30  INFO 19355 --- [stayease] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-02T10:35:19.394+05:30  INFO 19355 --- [stayease] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-03-02T10:35:19.410+05:30  INFO 19355 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : Started StayeaseApplication in 7.521 seconds (process running for 8.19)
+2026-03-02T10:35:20.708+05:30  INFO 19355 --- [stayease] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-02T10:35:20.709+05:30  INFO 19355 --- [stayease] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-02T10:35:20.711+05:30  INFO 19355 --- [stayease] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-02T10:35:20.775+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
+2026-03-02T10:35:20.788+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-02T10:35:20.792+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
+2026-03-02T10:35:21.526+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
+2026-03-02T10:35:21.526+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-02T10:35:21.526+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
+2026-03-02T10:35:21.690+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
+2026-03-02T10:35:21.690+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-02T10:35:21.690+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
+2026-03-02T10:35:21.840+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
+2026-03-02T10:35:21.840+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-02T10:35:21.840+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
+2026-03-02T10:35:21.858+05:30  WARN 19355 --- [stayease] [nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.takehome.stayease.dto.AuthResponse> com.takehome.stayease.controller.AuthController.register(com.takehome.stayease.dto.RegisterRequest) with 2 errors: [Field error in object 'registerRequest' on field 'password': rejected value [weak]; codes [Pattern.registerRequest.password,Pattern.password,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password],[Ljakarta.validation.constraints.Pattern$Flag;@a9a33b5,^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*]).*$]; default message [Password must contain uppercase, number, and special char]] [Field error in object 'registerRequest' on field 'password': rejected value [weak]; codes [Size.registerRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2026-03-02T10:35:21.865+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
+2026-03-02T10:35:21.866+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-02T10:35:21.866+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
+2026-03-02T10:35:21.873+05:30  WARN 19355 --- [stayease] [nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.takehome.stayease.dto.AuthResponse> com.takehome.stayease.controller.AuthController.register(com.takehome.stayease.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'email': rejected value [invalid-email]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@7b8a23ac,.*]; default message [Invalid email format]] ]
+2026-03-02T10:35:21.879+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/users/login
+2026-03-02T10:35:21.880+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-02T10:35:21.880+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/users/login
+2026-03-02T10:35:22.028+05:30 DEBUG 19355 --- [stayease] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/users/login
+2026-03-02T10:35:22.028+05:30 DEBUG 19355 --- [stayease] [io-8081-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-02T10:35:22.029+05:30 DEBUG 19355 --- [stayease] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/users/login
+2026-03-02T10:35:22.167+05:30  WARN 19355 --- [stayease] [io-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.takehome.stayease.exception.InvalidCredentialsException: Invalid credentials]
+2026-03-02T10:35:22.172+05:30 DEBUG 19355 --- [stayease] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/hotels
+2026-03-02T10:35:22.172+05:30 DEBUG 19355 --- [stayease] [io-8081-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-02T10:35:22.180+05:30 DEBUG 19355 --- [stayease] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-03-02T10:35:22.181+05:30 DEBUG 19355 --- [stayease] [io-8081-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-02T10:35:22.186+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/hotels
+2026-03-02T10:35:22.276+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/hotels
+2026-03-02T10:35:22.284+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-3] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.HotelController.createHotel(com.takehome.stayease.dto.HotelRequest); target is of class [com.takehome.stayease.controller.HotelController]
+2026-03-02T10:35:22.312+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-3] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.HotelController.createHotel(com.takehome.stayease.dto.HotelRequest); target is of class [com.takehome.stayease.controller.HotelController]
+2026-03-02T10:35:22.314+05:30 ERROR 19355 --- [stayease] [nio-8081-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.takehome.stayease.dto.HotelRequest.getTotalRooms()" is null] with root cause
 
 java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.takehome.stayease.dto.HotelRequest.getTotalRooms()" is null
 	at com.takehome.stayease.service.HotelService.createHotel(HotelService.java:25) ~[main/:na]
 	at com.takehome.stayease.controller.HotelController.createHotel(HotelController.java:30) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.proceed(AuthorizationManagerBeforeMethodInterceptor.java:269) ~[spring-security-core-6.3.3.jar:6.3.3]
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:264) ~[spring-security-core-6.3.3.jar:6.3.3]
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:197) ~[spring-security-core-6.3.3.jar:6.3.3]
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.12.jar:6.1.12]
+	at com.takehome.stayease.controller.HotelController$$SpringCGLIB$$0.createHotel(<generated>) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -122,7 +141,7 @@ java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" bec
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
 	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
-	at com.takehome.stayease.config.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:64) ~[main/:na]
+	at com.takehome.stayease.config.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:66) ~[main/:na]
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
@@ -181,22 +200,38 @@ java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" bec
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
-2026-01-06T18:57:50.161+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /error
-2026-01-06T18:57:50.162+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-01-06T18:57:50.170+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/hotels
-2026-01-06T18:57:50.184+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /error
-2026-01-06T18:57:50.185+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2026-01-06T18:57:50.192+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/hotels
-2026-01-06T18:57:50.205+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/hotels
-2026-01-06T18:57:50.225+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/bookings/6
-2026-01-06T18:57:50.237+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/bookings/6
-2026-01-06T18:57:50.312+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/bookings/6
-2026-01-06T18:57:50.326+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/bookings/6
-2026-01-06T18:57:50.336+05:30  WARN 4454 --- [stayease] [nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.takehome.stayease.exception.NoRoomsAvailableException: No rooms available]
-2026-01-06T18:57:50.340+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/bookings/1
-2026-01-06T18:57:50.351+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/bookings/1
-2026-01-06T18:57:50.370+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Securing DELETE /api/bookings/1
-2026-01-06T18:57:50.382+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Secured DELETE /api/bookings/1
-2026-01-06T18:57:50.415+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing DELETE /api/bookings/1
-2026-01-06T18:57:50.429+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing DELETE /error
-2026-01-06T18:57:50.429+05:30 DEBUG 4454 --- [stayease] [nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-02T10:35:22.323+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /error
+2026-03-02T10:35:22.323+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-02T10:35:22.329+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/hotels
+2026-03-02T10:35:22.353+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/hotels
+2026-03-02T10:35:22.355+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-4] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.HotelController.createHotel(com.takehome.stayease.dto.HotelRequest); target is of class [com.takehome.stayease.controller.HotelController]
+2026-03-02T10:35:22.360+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-4] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.HotelController.createHotel(com.takehome.stayease.dto.HotelRequest); target is of class [com.takehome.stayease.controller.HotelController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@262b2968 and decision ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasRole('ADMIN')]
+2026-03-02T10:35:22.364+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /error
+2026-03-02T10:35:22.364+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-03-02T10:35:22.370+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/hotels
+2026-03-02T10:35:22.385+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/hotels
+2026-03-02T10:35:22.387+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-5] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.HotelController.createHotel(com.takehome.stayease.dto.HotelRequest); target is of class [com.takehome.stayease.controller.HotelController]
+2026-03-02T10:35:22.388+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-5] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.HotelController.createHotel(com.takehome.stayease.dto.HotelRequest); target is of class [com.takehome.stayease.controller.HotelController]
+2026-03-02T10:35:22.408+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/bookings/6
+2026-03-02T10:35:22.418+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/bookings/6
+2026-03-02T10:35:22.431+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-7] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.BookingController.createBooking(java.lang.Long,com.takehome.stayease.dto.BookingRequest); target is of class [com.takehome.stayease.controller.BookingController]
+2026-03-02T10:35:22.431+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-7] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.BookingController.createBooking(java.lang.Long,com.takehome.stayease.dto.BookingRequest); target is of class [com.takehome.stayease.controller.BookingController]
+2026-03-02T10:35:22.500+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Securing POST /api/bookings/6
+2026-03-02T10:35:22.510+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-9] o.s.security.web.FilterChainProxy        : Secured POST /api/bookings/6
+2026-03-02T10:35:22.513+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-9] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.BookingController.createBooking(java.lang.Long,com.takehome.stayease.dto.BookingRequest); target is of class [com.takehome.stayease.controller.BookingController]
+2026-03-02T10:35:22.514+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-9] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.BookingController.createBooking(java.lang.Long,com.takehome.stayease.dto.BookingRequest); target is of class [com.takehome.stayease.controller.BookingController]
+2026-03-02T10:35:22.522+05:30  WARN 19355 --- [stayease] [nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.takehome.stayease.exception.NoRoomsAvailableException: No rooms available]
+2026-03-02T10:35:22.528+05:30 DEBUG 19355 --- [stayease] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/bookings/6
+2026-03-02T10:35:22.538+05:30 DEBUG 19355 --- [stayease] [io-8081-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/bookings/6
+2026-03-02T10:35:22.541+05:30 DEBUG 19355 --- [stayease] [io-8081-exec-10] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.BookingController.getBooking(java.lang.Long); target is of class [com.takehome.stayease.controller.BookingController]
+2026-03-02T10:35:22.541+05:30 DEBUG 19355 --- [stayease] [io-8081-exec-10] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.BookingController.getBooking(java.lang.Long); target is of class [com.takehome.stayease.controller.BookingController]
+2026-03-02T10:35:22.560+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing DELETE /api/bookings/6
+2026-03-02T10:35:22.571+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Secured DELETE /api/bookings/6
+2026-03-02T10:35:22.572+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-4] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.BookingController.cancelBooking(java.lang.Long); target is of class [com.takehome.stayease.controller.BookingController]
+2026-03-02T10:35:22.573+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-4] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.BookingController.cancelBooking(java.lang.Long); target is of class [com.takehome.stayease.controller.BookingController]
+2026-03-02T10:35:22.609+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Securing DELETE /api/bookings/6
+2026-03-02T10:35:22.619+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Secured DELETE /api/bookings/6
+2026-03-02T10:35:22.620+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-6] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.BookingController.cancelBooking(java.lang.Long); target is of class [com.takehome.stayease.controller.BookingController]
+2026-03-02T10:35:22.621+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-6] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.takehome.stayease.controller.BookingController.cancelBooking(java.lang.Long); target is of class [com.takehome.stayease.controller.BookingController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@262b2968 and decision ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasRole('HOTEL_MANAGER')]
+2026-03-02T10:35:22.625+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-6] o.s.security.web.FilterChainProxy        : Securing DELETE /error
+2026-03-02T10:35:22.626+05:30 DEBUG 19355 --- [stayease] [nio-8081-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
