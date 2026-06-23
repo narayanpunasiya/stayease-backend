@@ -71,7 +71,7 @@ public class BookingServiceImpl implements BookingService {
         Booking booking = bookingRepository.findById(bookingId)
                 .orElseThrow(() -> new ResourceNotFoundException("Booking not found"));
 
-        validateOwnership(booking);
+        // validateOwnership(booking);
 
         Hotel hotel = booking.getHotel();
         hotel.setAvailableRooms(hotel.getAvailableRooms() + 1);
