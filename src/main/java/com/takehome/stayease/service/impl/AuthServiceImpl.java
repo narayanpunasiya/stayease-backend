@@ -3,14 +3,19 @@ package com.takehome.stayease.service.impl;
 import com.takehome.stayease.dto.*;
 import com.takehome.stayease.entity.Role;
 import com.takehome.stayease.entity.User;
+import com.takehome.stayease.exception.InvalidCredentialsException;
+import com.takehome.stayease.exception.ResourceNotFoundException;
 import com.takehome.stayease.repository.UserRepository;
 import com.takehome.stayease.security.JwtService;
 import com.takehome.stayease.service.AuthService;
+
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.authentication.*;
+
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.security.authentication.AuthenticationManager;
 
 @Service
 @RequiredArgsConstructor
@@ -20,13 +25,12 @@ public class AuthServiceImpl implements AuthService {
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
-    
 
     @Override
     public AuthResponse register(RegisterRequest request) {
 
         if (userRepository.existsByEmail(request.getEmail())) {
-            throw new RuntimeException("User already exists");
+            throw new ResourceNotFoundException("User already exists");
         }
 
         User user = User.builder()
@@ -39,7 +43,7 @@ public class AuthServiceImpl implements AuthService {
 
         userRepository.save(user);
 
-        String token = jwtService.generateToken(user.getEmail());
+        String token = jwtService.generateToken(user);
 
         return new AuthResponse(token);
     }
@@ -47,14 +51,27 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public AuthResponse login(LoginRequest request) {
 
-        authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(
-                        request.getEmail(),
-                        request.getPassword()
-                )
-        );
+        try {
 
-        String token = jwtService.generateToken(request.getEmail());
+            authenticationManager.authenticate(
+                    new UsernamePasswordAuthenticationToken(
+                            request.getEmail(),
+                            request.getPassword()
+                    )
+            );
+
+        } catch (BadCredentialsException ex) {
+
+            throw new InvalidCredentialsException(
+                    "Invalid email or password"
+            );
+        }
+
+        User user = userRepository.findByEmail(request.getEmail())
+                .orElseThrow(() ->
+                        new ResourceNotFoundException("User not found"));
+
+        String token = jwtService.generateToken(user);
 
         return new AuthResponse(token);
     }

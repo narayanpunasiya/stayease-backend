@@ -1,46 +1,37 @@
-// package com.takehome.stayease.controller;
+package com.takehome.stayease.controller;
 
-// import com.takehome.stayease.dto.BookingRequest;
-// import com.takehome.stayease.dto.BookingResponse;
-// import com.takehome.stayease.service.BookingService;
-// import lombok.RequiredArgsConstructor;
-// import org.springframework.http.ResponseEntity;
-// import org.springframework.security.access.prepost.PreAuthorize;
-// import org.springframework.security.core.context.SecurityContextHolder;
-// import org.springframework.web.bind.annotation.*;
+import com.takehome.stayease.dto.BookingRequest;
+import com.takehome.stayease.dto.BookingResponse;
+import com.takehome.stayease.service.BookingService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
-// import jakarta.validation.Valid;
+@RestController
+@RequestMapping("/api/bookings")
+@RequiredArgsConstructor
+public class BookingController {
 
-// @RestController
-// @RequestMapping("/api/bookings")
-// @RequiredArgsConstructor
-// public class BookingController {
+    private final BookingService bookingService;
 
-//     private final BookingService bookingService;
+    @PostMapping("/{hotelId}")
+    public ResponseEntity<BookingResponse> createBooking(
+            @PathVariable Long hotelId,
+            @RequestBody BookingRequest request) {
 
-//     // Create booking: only USER (Customer)
-//     @PreAuthorize("hasRole('USER')")
-//     @PostMapping("/{hotelId}")
-//     public ResponseEntity<BookingResponse> createBooking(@PathVariable Long hotelId,
-//                                                          @Valid @RequestBody BookingRequest request) {
+        return ResponseEntity.ok(
+                bookingService.createBooking(hotelId, request)
+        );
+    }
 
-//         String email = SecurityContextHolder.getContext().getAuthentication().getName();
-//         return ResponseEntity.ok(bookingService.createBooking(hotelId, request, email));
-//     }
+    @GetMapping("/{bookingId}")
+    public ResponseEntity<BookingResponse> getBooking(@PathVariable Long bookingId) {
+        return ResponseEntity.ok(bookingService.getBooking(bookingId));
+    }
 
-//     // Get booking details: only the customer who booked
-//     @PreAuthorize("hasRole('USER')")
-//     @GetMapping("/{bookingId}")
-//     public ResponseEntity<BookingResponse> getBooking(@PathVariable Long bookingId) {
-//         String email = SecurityContextHolder.getContext().getAuthentication().getName();
-//         return ResponseEntity.ok(bookingService.getBooking(bookingId, email));
-//     }
-
-//     // Cancel booking: only HOTEL_MANAGER
-//     @PreAuthorize("hasRole('HOTEL_MANAGER')")
-//     @DeleteMapping("/{bookingId}")
-//     public ResponseEntity<Void> cancelBooking(@PathVariable Long bookingId) {
-//         bookingService.cancelBooking(bookingId);
-//         return ResponseEntity.noContent().build();
-//     }
-// }
+    @DeleteMapping("/{bookingId}")
+    public ResponseEntity<Void> cancelBooking(@PathVariable Long bookingId) {
+        bookingService.cancelBooking(bookingId);
+        return ResponseEntity.noContent().build();
+    }
+}
